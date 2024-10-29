@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>USING CARDS</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  
+<div class="header">
+<h1 size="30" face="arial">COLLEGE DAY </h1>
+<h5 face="italic">Diovis Placencia IT-503P</h5>
+
+</div>
+<div class="body">
+<div class="card-container">
+<div class="card">
+<div class="wrapper">
+<p class="colored-text">This event was very enjoy because have a showdown each department and have a dance showdown,a lodt of students we're shout their representative ambassadress.</p>
+<img src="unnamed-removebg-preview.png" class="cover-image">
+</div>
+<img src="hakdog.png" class="title">
+<img src="ambassador.jpg" class="character">
+
+
+</div>
+
+<div class="card">
+<div class="wrapper">
+<p class="colored-text">During the event each department in college presenting their cooking skills during the college day event in ACT,very enjoy to watch!</p>
+<img src="unnamed-removebg-preview.png" class="cover-image">
+</div>
+<img src ="maja.png" class="title">
+<img src="cooking.jpg" class="character">
+</div>
+
+
+<div class="card">
+<div class="wrapper">
+  <p class="colored-text">All College Department must present their La Paroza in ACT during College Day,very proud to watch the CSS Department because they are very talented.</p>
+<img src="unnamed-removebg-preview.png" class="cover-image">
+
+</div>
+<img src="hotcake.png" class="title">
+<img src="la paroza.jpg" class="character">
+</div>
+
+<div class="card">
+<div class="wrapper">
+  <p class="colored-text">This one is have a band outside the ACT who pperform and also many students have sell any kinds of food,very enjoy in the band and other is dancing ,bonding with the other staff in ACT.</p>
+<img src="unnamed-removebg-preview.png" class="cover-image">
+</div>
+<img src="itlog.png" class="title">
+<img src="rakrakan.jpg" class="character">
+
+
+</div>
+</div>
+</div>
+</body>
+
+</html>
+
+<style>
+   .header{
+width: 100%;
+padding: 25px;
+background-color:rgb(80, 162, 240);
+position: fixed;
+top: 0;
+padding: 30px;
+font-size: 20px;
+text-align: center;
+}
+.footer{
+background-color: rgb(243, 237, 231);
+padding: 25px;
+width: 100%;
+text-align: right;
+position: fixed;
+bottom: 0;
+text-align: center;
+color: black;
+font-size: 20px;
+}
+
+
+:root {
+--card-height: 300px;
+--card-width: calc(var(--card-height) / 1.5);
+}
+* {
+box-sizing: border-box;
+
+}
+body {
+width: 100vw;
+height: 100vh;
+margin: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+background: rgb(3, 3, 3)
+
+}
+.card {
+width: 300px;
+height: 300px;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+padding: 0 36px;
+perspective: 2500px;
+margin: 0 50px;
+}
+
+.cover-image {
+width: 100%;
+height: 500px;
+object-fit: contain;
+}
+
+
+.wrapper {
+transition: all 0.5s;
+position: absolute;
+width: 100%;
+z-index: -1;
+}
+
+.card:hover .wrapper {
+transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+box-shadow: 2px 35px 32px -8px rgba(9, 220, 243, 0.75);
+-webkit-box-shadow: 2px 35px 32px -8px rgba(9, 220, 243, 0.75);
+-moz-box-shadow: 2px 35px 32px -8px rgba(9, 220, 243, 0.75);
+}
+
+.wrapper::before,
+.wrapper::after {
+content: "";
+opacity: 0;
+width: 100%;
+height: 80px;
+transition: all 0.5s;
+position: absolute;
+left: 0;
+}
+.wrapper::before {
+top: 0;
+height: 100%;
+background-image: linear-gradient(
+to top,
+
+transparent 46%,
+rgba(99, 101, 113, 0.5) 68%,
+
+);
+}
+.wrapper::after {
+bottom: 0;
+opacity: 1;
+background-image: linear-gradient(
+to bottom,
+transparent 46%,
+rgba(12, 13, 19, 0.5) 68%,
+
+);
+}
+
+.card:hover .wrapper::before,
+.wrapper::after {
+opacity: 1;
+}
+
+.card:hover .wrapper::after {
+height: 120px;
+}
+.title {
+width: 100%;
+transition: transform 0.5s;
+}
+.card:hover .title {
+
+transform: translate3d(0%, -50px, 100px);
+}
+
+.character {
+width: 100%;
+height: 200%;
+opacity: 0;
+transition: all 0.5s;
+position: absolute;
+z-index: -1;
+}
+
+.card:hover .character {
+opacity: 1;
+transform: translate3d(0%, -30%, 100px);
+text-transform: none;
+}
+
+.card-container{
+display: flex;
+margin-top: 400px;
+}
+.wrapper {
+            width: 80%;                /* Set the width of the wrapper */
+            margin: 10px auto;        /* Center the wrapper on the page */
+            padding: 5px;            /* Add padding inside the wrapper */
+            border-radius: 5px;       /* Round the corners */         
+            text-align: center;        /* Center the text */
+        }
+        .colored-text {
+            color: rgb(233, 233, 241);               /* Change this to your desired text color */
+            font-size: 15px;           /* Optional: Change font size */
+            padding: 0px;
+            position:absolute;
+            bottom: 80px;
+        }
+       
+
+
